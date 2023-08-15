@@ -11,7 +11,9 @@
 <body>
   <div class="container">
         <div class="header">🖥   VRtual TECH   🌐</div>
+
         <div class="navigation"></div>
+
             <div class="dropdown">
               <button class="dropbtn">☰</button>
                 <div class="dropdown-content">
@@ -20,6 +22,40 @@
                   <a href="#">About us</a>
                 </div>
             </div>
+
+            <div class="searchbar"><img src="searchbar.jpeg" alt=""></div>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for keywords..">
+
+            <ul id="myUL">
+              <li><a href="#">Medical uses</a></li>
+              <li><a href="#">What is VR?</a></li>
+              <li><a href="#">References</a></li>
+              
+
+            <script>
+              function myFunction() {
+                // Declare variables
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('myInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName('li');
+              
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                  a = li[i].getElementsByTagName("a")[0];
+                  txtValue = a.textContent || a.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                  } else {
+                    li[i].style.display = "none";
+                  }
+                }
+              }
+              </script>
+
+
+
         <div class="footer">this is my website !! </div>
         <div class="content-large">big box 1</div>
         <div class="content-small"></div>
