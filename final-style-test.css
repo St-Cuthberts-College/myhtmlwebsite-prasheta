@@ -1,0 +1,133 @@
+
+
+.container{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    width: 100vw;
+    height: 100vh;
+    gap: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.colour-h1{
+    color: rgb(13, 112, 112);
+}
+
+
+.container div {
+    padding: 10px;
+    border: 1px;
+    
+}
+
+
+
+.header {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    background: #f07ccc;
+    grid-column-end: 14;
+    color: rgb(118, 26, 113);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+}
+
+
+.navigation {
+    grid-row-start:2 ;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 14;
+    background: #e08cec;
+
+}
+
+.google_translate_element {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
+
+.dropbtn {
+    background-color: #d189cd;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+
+  }
+  
+  .dropdown {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #cb69c1;}
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+.content-large {
+    grid-row-start: 3;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 14;
+    background-color: #e8acd5;
+}
+
+.content-small{
+    grid-row-start:3;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+
+.content-small2{
+    grid-row-start: 8;
+    grid-row-end: 11;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.content-small3{
+    grid-row-start: 8;
+    grid-row-end: 11;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.footer {
+    grid-row-start: 13;
+    grid-row-end: 14;
+    grid-column-start: 1;
+    grid-column-end: 14;
+    background: #dac4e6;
+}
